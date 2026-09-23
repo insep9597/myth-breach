@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Myth Breach – Privacy Policy</title>
+<meta name="description" content="Privacy Policy and Terms of Service for the Myth Breach mobile game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* Same palette as the game ("graphite & coral"), with a light variant for readers who prefer it. */
+  :root {
+    --bg: #131417;
+    --bg-bottom: #0E0F11;
+    --panel: #1C1D21;
+    --line: #2E3036;
+    --text: #F1F2F4;
+    --muted: #8C9099;
+    --accent: #FF7A59;
+    --on-accent: #1A0B06;
+    --link: #FF9170;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F6F6F7;
+      --bg-bottom: #ECECEE;
+      --panel: #FFFFFF;
+      --line: #DDDEE2;
+      --text: #1B1C20;
+      --muted: #5E626B;
+      --accent: #E8603F;
+      --on-accent: #FFFFFF;
+      --link: #C2452A;
+      color-scheme: light;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F6F6F7;
+    --bg-bottom: #ECECEE;
+    --panel: #FFFFFF;
+    --line: #DDDEE2;
+    --text: #1B1C20;
+    --muted: #5E626B;
+    --accent: #E8603F;
+    --on-accent: #FFFFFF;
+    --link: #C2452A;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(var(--bg), var(--bg-bottom)) fixed;
+    background-color: var(--bg);
+    color: var(--text);
+    font: 400 16px/1.65 "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 700 24px/1 "Baloo 2", "Poppins", sans-serif;
+    white-space: nowrap;
+  }
+  .brand svg { flex: none; }
+  nav { display: flex; gap: 6px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+  nav a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 18px;
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  nav a[aria-current="page"] { background: var(--accent); color: var(--on-accent); }
+
+  main { max-width: 820px; margin: 0 auto; padding: 28px 16px 64px; }
+  .page[hidden] { display: none; }
+  h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.2; margin: 0 0 6px; font-weight: 600; }
+  .meta { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 20px 20px 8px;
+    margin-bottom: 16px;
+  }
+  .summary { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+  h2 { font-size: 19px; margin: 0 0 10px; font-weight: 600; }
+  h3 { font-size: 16px; margin: 18px 0 6px; font-weight: 600; }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--muted); }
+  footer { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 420px) {
+    .bar { justify-content: center; }
+    nav a { padding: 0 14px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <polygon points="9,3 16,15 2,15" fill="#4F9DFF"/>
+        <rect x="16" y="3" width="10" height="10" transform="rotate(45 21 8)" fill="#FFC24B"/>
+        <rect x="16" y="15" width="11" height="11" rx="1" fill="#FF5A5F"/>
+        <circle cx="9" cy="22" r="6" fill="#2ED39A"/>
+      </svg>
+      <span data-field="appName">Myth Breach</span>
+    </div>
+    <nav aria-label="Legal pages">
+      <a href="#privacy" data-page="privacy">Privacy Policy</a>
+      <a href="#terms" data-page="terms">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============================== PRIVACY POLICY ============================== -->
+  <article id="privacy" class="page" aria-labelledby="privacy-title">
+    <h1 id="privacy-title" tabindex="-1">Privacy Policy</h1>
+    <p class="meta">Effective date: <span data-field="effectiveDate"></span></p>
+
+    <section class="card summary">
+      <h2>In short</h2>
+      <ul>
+        <li><span data-field="appName"></span> has no accounts and does not ask for your name, email or any other personal details.</li>
+        <li>Your scores and settings are saved <strong>only on your device</strong>.</li>
+        <li>The game shows ads from <strong>Google AdMob</strong>. Google may collect device data, such as your advertising ID, to show and measure ads.</li>
+        <li>If you are in the EEA, the UK or Switzerland, you are asked for consent first, and you can change your choice any time in <em>Settings → Privacy options</em>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. Who we are</h2>
+      <p><span data-field="appName"></span> ("the Game") is a mobile puzzle game made by <span data-field="developer"></span> ("we", "us"). This policy explains what information is handled when you play the Game and what choices you have. Questions: <a data-field="email" data-mailto></a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Information stored on your device</h2>
+      <p>The Game saves the following on your device only. It is never sent to us:</p>
+      <ul>
+        <li>Game progress and statistics: best score, runs played and completed, crystals.</li>
+        <li>Settings: sound, vibration, reduced motion, language, and which tips you have already seen.</li>
+      </ul>
+      <p>You can delete this data at any time by clearing the app's storage or uninstalling the Game.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Advertising (Google AdMob)</h2>
+      <p>The Game is free and supported by ads: a small banner, and optional rewarded ads you can choose to watch for in-game bonuses (for example an extra Undo). Ads are provided by Google AdMob. When ads are requested or shown, Google may collect and process:</p>
+      <ul>
+        <li>Device identifiers such as the advertising ID (Android Advertising ID or Apple IDFA, where allowed);</li>
+        <li>IP address, from which an approximate location may be derived;</li>
+        <li>Device and app information (model, operating system, language, app version);</li>
+        <li>Ad interactions (impressions, clicks, whether a rewarded ad was watched to the end);</li>
+        <li>Diagnostic data about ad performance.</li>
+      </ul>
+      <p>Google uses this to deliver, measure and, where you have allowed it, personalize ads, and to prevent fraud. We do not receive your advertising ID or any other data that identifies you. We only see aggregated reports, such as how many ads were shown.</p>
+      <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Your choices and consent</h2>
+      <h3>EEA, UK and Switzerland</h3>
+      <p>On first launch the Game shows a consent message provided by Google (Google's User Messaging Platform). You can accept, reject or customize how your data is used for ads. If you do not consent, you may still see non-personalized or limited ads. You can change your choice at any time in <em>Settings → Privacy options</em> inside the Game.</p>
+      <h3>Everyone</h3>
+      <ul>
+        <li><strong>Android:</strong> Settings → Privacy → Ads (or Google → Ads) lets you reset or delete your advertising ID and opt out of personalized ads.</li>
+        <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking lets you stop apps from asking to track you.</li>
+        <li>You can review Google's ad settings at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Legal bases (EEA/UK)</h2>
+      <p>Where the GDPR applies, personalized advertising is based on your <strong>consent</strong>, which you can withdraw at any time. Non-personalized ads and fraud prevention rely on the <strong>legitimate interest</strong> of keeping the Game free and secure. Data stored only on your device is needed to provide the Game you asked to play.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR, the UK GDPR, KVKK in Türkiye, or US state laws such as the CCPA/CPRA), you may have the right to access, correct, delete or port your personal data, to object to or restrict processing, to withdraw consent, and to opt out of the "sale" or "sharing" of personal data for targeted advertising. Because we do not hold personal data about you, most requests are best handled through the choices in section 4 or directly with Google. You can still contact us and we will help. You also have the right to complain to your local data protection authority.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Children</h2>
+      <p>The Game is not directed at children under 13 (or the minimum age in your country). We do not knowingly collect personal data from children. If you believe a child has provided personal data through the Game, contact us and we will help remove it.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Retention and security</h2>
+      <p>Data on your device stays there until you delete it. Data collected by Google is kept under Google's own retention policies. Ad data travels over encrypted connections handled by Google's software.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. International transfers</h2>
+      <p>Google may process data on servers outside your country, including in the United States, using safeguards such as the EU Standard Contractual Clauses.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy, for example if we add features or services. The new version will be posted on this page with a new effective date. Please check it from time to time.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Contact</h2>
+      <p><span data-field="developer"></span><br>Email: <a data-field="email" data-mailto></a></p>
+    </section>
+  </article>
+
+  <!-- ============================== TERMS OF SERVICE ============================== -->
+  <article id="terms" class="page" aria-labelledby="terms-title" hidden>
+    <h1 id="terms-title" tabindex="-1">Terms of Service</h1>
+    <p class="meta">Effective date: <span data-field="effectiveDate"></span></p>
+
+    <section class="card">
+      <h2>1. Agreement</h2>
+      <p>By downloading or playing <span data-field="appName"></span> ("the Game") you agree to these Terms and to our <a href="#privacy">Privacy Policy</a>. If you do not agree, please do not use the Game. The terms of the store you downloaded it from (Google Play or the App Store) also apply.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. License</h2>
+      <p><span data-field="developer"></span> grants you a personal, non-exclusive, non-transferable, revocable license to use the Game on devices you own or control, for your own non-commercial entertainment.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>copy, modify, decompile or reverse engineer the Game, except where the law allows it;</li>
+        <li>cheat, or use bots or tools that change how the Game or its ads work;</li>
+        <li>click ads automatically or on purpose without real interest, or otherwise tamper with advertising;</li>
+        <li>use the Game in any unlawful way.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Ads and in-game rewards</h2>
+      <p>The Game shows ads. Rewarded ads are always optional. In-game bonuses (such as extra Undo or Swap charges) and in-game items such as crystals have <strong>no monetary value</strong>, cannot be exchanged for money, and may be limited, changed or removed. A reward is only granted if the ad is watched to the end and an ad is available. We are not responsible for the content of third-party ads or for websites they link to.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Ownership</h2>
+      <p>The Game, including its code, design, art, text and name, belongs to <span data-field="developer"></span> or its licensors and is protected by intellectual property laws. Fonts and other third-party components are used under their own licenses.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Updates and availability</h2>
+      <p>We may update, change or stop offering the Game or any feature at any time. Progress is stored on your device and may be lost if you uninstall the Game or clear its data.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Disclaimer</h2>
+      <p>The Game is provided "as is" and "as available", without warranties of any kind, to the fullest extent the law permits. We do not guarantee that it will be error-free or always available.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Limitation of liability</h2>
+      <p>To the fullest extent the law permits, we are not liable for indirect, incidental or consequential damages, or for loss of data or progress, arising from your use of the Game. Nothing in these Terms limits rights you have as a consumer that cannot be limited by contract.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Termination</h2>
+      <p>You may stop using the Game at any time by uninstalling it. Your license ends automatically if you break these Terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Governing law</h2>
+      <p>These Terms are governed by the laws of <span data-field="country"></span>, without affecting mandatory consumer protection laws of the country where you live.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Changes and contact</h2>
+      <p>We may update these Terms; the new version will be posted here with a new effective date. Questions: <a data-field="email" data-mailto></a>.</p>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> <span data-field="developer"></span> · <span data-field="appName"></span></p>
+</footer>
+
+<script>
+  // Edit these values once; every page fills them in automatically.
+  const CONFIG = {
+    appName: "Myth Breach",
+    developer: "YOUR NAME OR STUDIO",
+    email: "you@example.com",
+    effectiveDate: "September 23, 2026",
+    country: "the Republic of Türkiye",
+  };
+
+  document.querySelectorAll("[data-field]").forEach((el) => {
+    const value = CONFIG[el.dataset.field];
+    if (value === undefined) return;
+    el.textContent = value;
+    if (el.hasAttribute("data-mailto")) el.href = "mailto:" + value;
+  });
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Hash routing: #privacy (default) and #terms. Plain links, so both pages are linkable
+  // (e.g. yoursite.com/#terms) and the browser back button works.
+  const PAGES = { privacy: "Privacy Policy", terms: "Terms of Service" };
+
+  function show(moveFocus) {
+    const id = location.hash.slice(1);
+    const page = PAGES[id] ? id : "privacy";
+    for (const key of Object.keys(PAGES)) {
+      document.getElementById(key).hidden = key !== page;
+    }
+    document.querySelectorAll("nav a").forEach((a) => {
+      if (a.dataset.page === page) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    document.title = CONFIG.appName + " – " + PAGES[page];
+    window.scrollTo(0, 0);
+    if (moveFocus) document.getElementById(page + "-title").focus({ preventScroll: true });
+  }
+
+  window.addEventListener("hashchange", () => show(true));
+  show(false);
+</script>
+</body>
+</html>
